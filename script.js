@@ -1,21 +1,23 @@
-const products = [
-    { name: "Neon Pulse Tee", price: "$29" },
-    { name: "Cyber Wave", price: "$35" },
-    { name: "Midnight Cotton", price: "$25" },
-    { name: "Arctic Flow", price: "$30" }
+const galleryItems = [
+    { name: "Silk Touch Tee", price: "$45" },
+    { name: "Urban Edge", price: "$38" },
+    { name: "Minimalist Vibe", price: "$32" },
+    { name: "Classic Noir", price: "$40" },
+    { name: "Sunset Blend", price: "$35" },
+    { name: "Arctic Flow", price: "$42" }
 ];
 
-const grid = document.getElementById('product-grid');
+const gallery = document.getElementById('product-gallery');
 
-products.forEach(p => {
+galleryItems.forEach(item => {
     const card = document.createElement('div');
-    card.className = 'card';
+    card.className = 'gallery-card';
     card.innerHTML = `
         <div class="img-box"></div>
         <div class="info">
-            <h4>${p.name}</h4>
-            <p class="price">${p.price}</p>
+            <h4>${item.name}</h4>
+            <p class="price">${item.price}</p>
         </div>
     `;
-    grid.appendChild(card);
+    gallery.appendChild(card);
 });

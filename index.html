@@ -1,31 +1,149 @@
-<footer>
-    <div class="footer-container">
-        <div class="footer-card brand">
-            <h3>VibeThread<span>.</span></h3>
-            <p>"Quality over everything." We craft premium apparel for the modern world.</p>
-            <div class="social-icons">
-                <span>📸</span> <span>🐦</span> <span>👤</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeThread | Premium Apparel</title>
+    <style>
+        /* --- Modern Reset & Variables --- */
+        :root {
+            --primary: #764ba2;
+            --accent: #ff416c;
+            --glass: rgba(255, 255, 255, 0.85);
+            --card-bg: #ffffff;
+            --dark-card: rgba(255, 255, 255, 0.05);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, sans-serif; }
+        body { background: #f0f2f5; color: #333; }
+
+        /* --- 1. Vibrant Header --- */
+        header {
+            position: sticky;
+            top: 0;
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .logo { font-weight: 900; font-size: 1.6rem; color: var(--primary); letter-spacing: -1px; }
+
+        /* --- 2. Catalog (Product Cards) --- */
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            padding: 30px 5%;
+        }
+        .product-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(118, 75, 162, 0.2);
+        }
+        .img-placeholder {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background: #000; /* Solid black as requested */
+        }
+        .product-info { padding: 15px; }
+        .price { color: var(--accent); font-weight: bold; margin-top: 5px; }
+
+        /* --- 3. Modern Card-Based Footer --- */
+        footer {
+            background: #121212;
+            color: #fff;
+            padding: 60px 5% 20px;
+            margin-top: 50px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+        .footer-card {
+            background: var(--dark-card);
+            padding: 25px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: 0.3s;
+        }
+        .footer-card:hover {
+            background: rgba(255,255,255,0.08);
+            border-color: var(--accent);
+        }
+        .footer-card h4 { margin-bottom: 15px; color: var(--accent); text-transform: uppercase; font-size: 0.9rem; }
+        .footer-card p, .footer-card a { color: #bbb; text-decoration: none; font-size: 0.95rem; line-height: 1.6; }
+        .footer-card a:hover { color: #fff; }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">VibeThread<span>.</span></div>
+        <div class="nav-ui">🛒</div>
+    </header>
+
+    <main class="catalog">
+        <div class="product-card">
+            <div class="img-placeholder"></div>
+            <div class="product-info">
+                <h4>Onyx Street Tee</h4>
+                <p class="price">$29.00</p>
             </div>
         </div>
-
-        <div class="footer-card">
-            <h4>Explore</h4>
-            <ul>
-                <li><a href="#">New Arrivals</a></li>
-                <li><a href="#">Size Guide</a></li>
-                <li><a href="#">Shipping Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-            </ul>
+        <div class="product-card">
+            <div class="img-placeholder"></div>
+            <div class="product-info">
+                <h4>Neon Pulse</h4>
+                <p class="price">$34.00</p>
+            </div>
         </div>
+    </main>
 
-        <div class="footer-card">
-            <h4>Get In Touch</h4>
-            <p>📍 123 Fashion St, Cyber City</p>
-            <p>📧 hello@vibethread.in</p>
-            <p>📞 +91 98765 43210</p>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-card">
+                <h4>About Us</h4>
+                <p>VibeThread is more than a brand. It's a statement of quality and modern street culture. 👕</p>
+            </div>
+            <div class="footer-card">
+                <h4>Quick Links</h4>
+                <p><a href="#">Track Order</a></p>
+                <p><a href="#">Size Chart</a></p>
+                <p><a href="#">Return Policy</a></p>
+            </div>
+            <div class="footer-card">
+                <h4>Contact</h4>
+                <p>📍 123 Fashion St, Cyber City</p>
+                <p>📧 hello@vibethread.in</p>
+                <p>📞 +91 98765 43210</p>
+            </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-        &copy; 2026 VibeThread. Built for the Bold.
-    </div>
-</footer>
+        <div class="footer-bottom">
+            &copy; 2026 VibeThread Co. | Quality Over Everything.
+        </div>
+    </footer>
+
+</body>
+</html>

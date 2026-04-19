@@ -1,92 +1,55 @@
-:root {
-    --primary: #764ba2;
-    --accent: #ff416c;
-    --bg: #fdfdfd;
-    --card-bg: #ffffff;
-    --placeholder: #0a0a0a; /* Black image placeholders */
-}
-
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-
-body { background: var(--bg); color: #333; }
-
-/* Vibrant Top Bar */
-.top-bar {
-    background: #000;
+footer {
+    background: #0f0f0f;
+    padding: 60px 5% 20px;
     color: #fff;
-    padding: 10px;
-    font-size: 11px;
-    text-align: center;
-    font-weight: bold;
+    margin-top: 50px;
 }
 
-/* Modern Nav */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 5%;
-    background: rgba(255,255,255,0.8);
-    backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.logo { font-weight: 800; font-size: 1.5rem; color: var(--primary); }
-
-/* Hero Video Style */
-.hero { text-align: center; padding: 20px 5%; }
-.video-container {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    background: var(--placeholder);
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #444;
-    margin-bottom: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-/* Product Cards */
-.grid {
+.footer-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 15px;
-    padding: 20px 5%;
-}
-
-.card {
-    background: var(--card-bg);
-    border-radius: 15px;
-    overflow: hidden;
-    transition: 0.3s ease;
-    border: 1px solid #eee;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
-}
-
-.img-box {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    background: var(--placeholder);
-}
-
-.info { padding: 12px; text-align: center; }
-.info h4 { font-size: 0.9rem; margin-bottom: 5px; }
-.price { font-weight: bold; color: var(--accent); }
-
-/* Footer Styling */
-footer { background: #111; color: #aaa; padding: 40px 5% 20px; margin-top: 40px; }
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.footer-section h3 { color: #fff; margin-bottom: 10px; }
-.footer-links a { display: block; color: #aaa; text-decoration: none; margin-bottom: 8px; font-size: 14px; }
-.footer-bottom { border-top: 1px solid #222; margin-top: 30px; padding-top: 20px; text-align: center; font-size: 12px; }
+
+/* Creating the "Card" look for footer sections */
+.footer-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.footer-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateY(-5px);
+    border-color: var(--accent); /* Uses your red accent color */
+}
+
+.footer-card h3 span { color: var(--accent); }
+
+.footer-card ul { list-style: none; }
+
+.footer-card ul li { margin-bottom: 12px; }
+
+.footer-card a {
+    color: #bbb;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-card a:hover {
+    color: #fff;
+    padding-left: 5px; /* Subtle "push" animation */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.8rem;
+    color: #666;
+}

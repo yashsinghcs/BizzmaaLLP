@@ -1,0 +1,199 @@
+/* --- 1. Global Setup & Variables --- */
+:root {
+    --primary: #1a1a1a;    /* Bold Black */
+    --accent: #ff416c;     /* Trendy Pink/Red */
+    --glass: rgba(255, 255, 255, 0.85);
+    --white: #ffffff;
+    --bg: #f8f9fa;
+    --placeholder: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--primary);
+    line-height: 1.6;
+}
+
+/* --- 2. Top Navigation Banner --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: var(--glass);
+    backdrop-filter: blur(15px); /* Glassmorphism */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+}
+
+.logo span { color: var(--accent); }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover { color: var(--accent); }
+
+/* --- 3. Elegant Hero Card Banner --- */
+.hero-banner {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    height: 350px;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('https://placehold.co/1000x350/000000/FFFFFF?text=Summer+Luxe+2026');
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    color: var(--white);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.banner-content h2 { font-size: 2.5rem; margin-bottom: 10px; }
+.banner-content p { margin-bottom: 20px; font-weight: 300; }
+
+.btn-primary {
+    background: var(--white);
+    color: var(--primary);
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-primary:hover { transform: scale(1.05); }
+
+/* --- 4. Refined Gallery View --- */
+.gallery-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 5%;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.gallery-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 12px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.gallery-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    border-color: var(--accent);
+}
+
+.img-box {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: var(--placeholder);
+    border-radius: 15px;
+    margin-bottom: 12px;
+}
+
+.info { text-align: center; }
+.info h4 { font-size: 0.85rem; margin-bottom: 4px; }
+.price { color: var(--accent); font-weight: 700; font-size: 0.95rem; }
+
+/* --- 5. Modern Card-Based Footer --- */
+footer {
+    background: #0f0f0f;
+    padding: 60px 5% 30px;
+    color: #fff;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 25px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-card h4 {
+    margin-bottom: 15px;
+    color: var(--accent);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.footer-card ul { list-style: none; }
+.footer-card li { margin-bottom: 10px; }
+.footer-card a {
+    color: #999;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.footer-card a:hover { color: #fff; padding-left: 4px; }
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.75rem;
+    color: #555;
+}
+
+/* --- 6. Mobile Responsiveness --- */
+@media (max-width: 600px) {
+    .nav-links { display: none; } /* Simplified for mobile */
+    .hero-banner { height: 250px; padding: 0 20px; }
+    .hero-banner h2 { font-size: 1.8rem; }
+    .product-gallery { grid-template-columns: repeat(2, 1fr); }
+}

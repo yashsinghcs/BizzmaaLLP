@@ -1,7 +1,7 @@
-# E-Commerce Project
+# E-Commerce Design2
 
 
- this project is a fully responsive e-commerce website project made only HTML, CSS and JavaScript.
+ this Template is a fully responsive e-commerce website project made only HTML, CSS and JavaScript.
 
 No framework or library (except glide.js) was used throughout the project.
 

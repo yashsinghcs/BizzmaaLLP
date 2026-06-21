@@ -1,68 +1,148 @@
-<div class="mzaCarousel" id="mzaCarousel" aria-roledescription="carousel" aria-label="Featured cards">
-  <div class="mzaCarousel-viewport" tabindex="0">
-    <div class="mzaCarousel-track">
-      <article class="mzaCarousel-slide" role="group" aria-roledescription="slide" aria-label="1 of 5">
-        <div class="mzaCard" style="--mzaCard-bg:url('https://picsum.photos/id/1015/1600/1000');">
-          <header class="mzaCard-head mzaPar-1">
-            <h2 class="mzaCard-title">Edge Visuals</h2>
-            <p class="mzaCard-kicker">Design systems that breathe</p>
-          </header>
-          <p class="mzaCard-text mzaPar-2">Build adaptive UI foundations with tokens, motion, and accessible color ramps. Ship faster without sameness.</p>
-          <footer class="mzaCard-actions mzaPar-3"><button class="mzaBtn">See case study</button></footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizzmaa Events | Premium Party Experiences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Neon Party Blobs -->
+    <div class="bg-glow blob-1"></div>
+    <div class="bg-glow blob-2"></div>
+    <div class="bg-glow blob-3"></div>
+
+    <!-- Glass Navbar -->
+    <nav class="glass-nav">
+        <div class="logo">BIZZMAA EVENTS</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#services">Vibes</a></li>
+            <li><a href="#portfolio">Gallery</a></li>
+            <li><a href="#testimonials">Hype</a></li>
+        </ul>
+        <button class="nav-btn">Get on the List</button>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-      </article>
+    </nav>
 
-      <article class="mzaCarousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 5">
-        <div class="mzaCard" style="--mzaCard-bg:url('https://picsum.photos/id/1011/1600/1000');">
-          <header class="mzaCard-head mzaPar-1">
-            <h2 class="mzaCard-title">Realtime Dashboards</h2>
-            <p class="mzaCard-kicker">Signal over noise</p>
-          </header>
-          <p class="mzaCard-text mzaPar-2">Stream metrics, smooth spikes, and highlight deltas. Clarity first, chrome last.</p>
-          <footer class="mzaCard-actions mzaPar-3"><button class="mzaBtn">View live demo</button></footer>
+    <main class="hero-container" id="home">
+        <!-- Hero Section -->
+        <header class="glass-card hero-card reveal">
+            <span class="badge">Next-Level Nightlife</span>
+            <h1>Bring the Noise. We Bring the <span class="gradient-text">Vibe.</span></h1>
+            <p>From underground raves to massive music festivals, Bizzmaa Events engineers high-octane, visually explosive party experiences that shatter expectations.</p>
+            <div class="cta-group">
+                <a href="#services" class="btn btn-primary">Discover the Vibe</a>
+                <a href="#portfolio" class="btn btn-secondary">See the Madness</a>
+            </div>
+        </header>
+
+        <!-- Metrics/Stats Section -->
+        <section class="metrics-grid reveal stagger">
+            <div class="glass-card metric">
+                <h2>500+</h2>
+                <p>Parties Thrown</p>
+            </div>
+            <div class="glass-card metric">
+                <h2>100k</h2>
+                <p>Crowds Moved</p>
+            </div>
+            <div class="glass-card metric">
+                <h2>24/7</h2>
+                <p>Pure Energy</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <div class="section-header reveal">
+            <h2>Our Playgrounds</h2>
+            <p>Where the magic happens.</p>
         </div>
-      </article>
+        
+        <section class="feature-grid" id="services">
+            <div class="glass-card feature-card reveal stagger">
+                <div class="icon">🎧</div>
+                <h3>Club Takeovers</h3>
+                <p>We transform standard venues into immersive audio-visual playgrounds with custom laser rigs, Co2 cannons, and top-tier DJ lineups.</p>
+            </div>
+            <div class="glass-card feature-card reveal stagger">
+                <div class="icon">🎪</div>
+                <h3>Music Festivals</h3>
+                <p>Massive stage designs, seamless crowd control, and vendor management for thousands of festival-goers.</p>
+            </div>
+            <div class="glass-card feature-card reveal stagger">
+                <div class="icon">🍸</div>
+                <h3>VIP Afterparties</h3>
+                <p>Exclusive, invite-only energy. Premium bottle service, secret locations, and an atmosphere built for the elite.</p>
+            </div>
+            <div class="glass-card feature-card reveal stagger">
+                <div class="icon">✨</div>
+                <h3>Neon Galas</h3>
+                <p>Where high fashion meets underground rave aesthetics. Blacklights, glowing decor, and upscale chaos.</p>
+            </div>
+        </section>
 
-      <article class="mzaCarousel-slide" role="group" aria-roledescription="slide" aria-label="3 of 5">
-        <div class="mzaCard" style="--mzaCard-bg:url('https://picsum.photos/id/1018/1600/1000');">
-          <header class="mzaCard-head mzaPar-1">
-            <h2 class="mzaCard-title">Brand Motion</h2>
-            <p class="mzaCard-kicker">Identity in motion</p>
-          </header>
-          <p class="mzaCard-text mzaPar-2">Translate marks into kinetic systems. Timing, easing, and restraint create memory.</p>
-          <footer class="mzaCard-actions mzaPar-3"><button class="mzaBtn">Explore reels</button></footer>
+        <!-- Showcase / Portfolio -->
+        <div class="section-header reveal">
+            <h2>The Hall of Fame</h2>
+            <p>Visual proof of our legendary nights.</p>
         </div>
-      </article>
 
-      <article class="mzaCarousel-slide" role="group" aria-roledescription="slide" aria-label="4 of 5">
-        <div class="mzaCard" style="--mzaCard-bg:url('https://picsum.photos/id/1021/1600/1000');">
-          <header class="mzaCard-head mzaPar-1">
-            <h2 class="mzaCard-title">E-commerce UX</h2>
-            <p class="mzaCard-kicker">Frictionless paths</p>
-          </header>
-          <p class="mzaCard-text mzaPar-2">Model intent, compress choice, and keep the dopamine loop honest. Checkout in one breath.</p>
-          <footer class="mzaCard-actions mzaPar-3"><button class="mzaBtn">See patterns</button></footer>
+        <section class="portfolio-grid" id="portfolio">
+            <div class="glass-card portfolio-item reveal stagger">
+                <!-- Using Unsplash public images -->
+                <div class="img-placeholder party-bg-1"></div>
+                <div class="portfolio-info">
+                    <h4>Neon Nights Vol. 4</h4>
+                    <span>Warehouse District • 1,200 Ravers</span>
+                </div>
+            </div>
+            <div class="glass-card portfolio-item reveal stagger">
+                <div class="img-placeholder party-bg-2"></div>
+                <div class="portfolio-info">
+                    <h4>Summer Solstice Fest</h4>
+                    <span>Beachfront Mainstage • 3-Day Bender</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <div class="section-header reveal">
+            <h2>The Hype</h2>
         </div>
-      </article>
 
-      <article class="mzaCarousel-slide" role="group" aria-roledescription="slide" aria-label="5 of 5">
-        <div class="mzaCard" style="--mzaCard-bg:url('https://picsum.photos/id/1005/1600/1000');">
-          <header class="mzaCard-head mzaPar-1">
-            <h2 class="mzaCard-title">Content Engines</h2>
-            <p class="mzaCard-kicker">Scale without sludge</p>
-          </header>
-          <p class="mzaCard-text mzaPar-2">Structured content, image policy, and smart defaults. Publish daily, stay sharp.</p>
-          <footer class="mzaCard-actions mzaPar-3"><button class="mzaBtn">Read playbook</button></footer>
+        <section class="testimonial-grid" id="testimonials">
+            <div class="glass-card testimonial-card reveal stagger">
+                <p>"Bizzmaa doesn't just throw a party, they create an entirely different universe for the night. The light show was completely insane."</p>
+                <div class="client-info">
+                    <strong>DJ Apex</strong>
+                    <span>Headlining Artist</span>
+                </div>
+            </div>
+            <div class="glass-card testimonial-card reveal stagger">
+                <p>"Hands down the best VIP setup I've ever experienced. The energy was off the charts from 10 PM to sunrise."</p>
+                <div class="client-info">
+                    <strong>Sarah J.</strong>
+                    <span>Event Sponsor</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Glass Footer -->
+    <footer class="glass-footer reveal">
+        <div class="footer-content">
+            <div class="logo">BIZZMAA EVENTS</div>
+            <p>Eat. Sleep. Rave. Repeat.</p>
+            <p class="copyright">© 2026 Bizzmaa Events. All rights reserved.</p>
         </div>
-      </article>
-    </div>
-  </div>
+    </footer>
 
-  <div class="mzaCarousel-controls" aria-label="Controls">
-    <button class="mzaCarousel-prev" aria-label="Previous slide" type="button">‹</button>
-    <button class="mzaCarousel-next" aria-label="Next slide" type="button">›</button>
-  </div>
-
-  <div class="mzaCarousel-pagination" role="tablist" aria-label="Slide navigation"></div>
-  <div class="mzaCarousel-progress" aria-hidden="true"><span class="mzaCarousel-progressBar"></span></div>
-</div>
+    <script src="script.js"></script>
+</body>
+</html>
